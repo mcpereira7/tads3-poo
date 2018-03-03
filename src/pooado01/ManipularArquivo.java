@@ -6,7 +6,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,7 +37,7 @@ public class ManipularArquivo {
             FileReader lerArquivo = new FileReader(arq);
             BufferedReader bufferArquivo = new BufferedReader(lerArquivo);
 
-            FileReader lerArquivopib = new FileReader("..\\pib.txt");
+            FileReader lerArquivopib = new FileReader(".\\pib.txt");
             BufferedReader bufferArquivoPib = new BufferedReader(lerArquivopib);
 
             while ((linha = bufferArquivo.readLine()) != null) {
@@ -143,6 +142,7 @@ public class ManipularArquivo {
                     bufferedWriter.write("pib da regiao " + regioes.get(i).getNome() + " = " + regioes.get(i).getPib());
                     bufferedWriter.newLine();
                 }
+                
 
                 // feche o arquivo
                 bufferedWriter.close();
