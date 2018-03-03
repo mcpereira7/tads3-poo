@@ -29,7 +29,7 @@ public class ManipularArquivo {
         String separador = ";";
         Estado est = null;
         Regiao reg = null;
-        String arqSaida = "..\\saida.txt";
+        String arqSaida = ".\\saida.txt";
         float pib = 0;
         int aux = 0;
 
