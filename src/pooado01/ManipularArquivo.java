@@ -112,9 +112,6 @@ public class ManipularArquivo {
                 estados.get(i).setPibP((estados.get(i).getPib() / pib) * 100);
             }
 
-//                              for(int i = 0; i < estados.size(); i++){
-//                     System.out.println(estados.get(i).getNome() + " - " + estados.get(i).getPib() + " - " + estados.get(i).getPibP() + "%");
-//                 }
 //             Calcular total do pib por região
             aux = 1;
 
@@ -129,8 +126,6 @@ public class ManipularArquivo {
                 regioes.get(i).setPib(pib);
                 aux++;
             }
-//            System.out.println("Pib Total: " + pib);
-
 //                 Criando arquivo com os dados solicitados
             try {
 
